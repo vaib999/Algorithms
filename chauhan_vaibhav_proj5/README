@@ -1,0 +1,8 @@
+There are three cpp files.
+testing is for dynamic programming
+testing1 is for brute force
+testing 2 is for backtracking
+
+random seed is same so result can be reproduced in all three files.
+
+For changing initial values the seed has to be changed in all three files.

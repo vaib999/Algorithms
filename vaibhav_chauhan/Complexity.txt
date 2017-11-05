@@ -1,0 +1,67 @@
+Time Complexity
+
+Exchange Sort:
+
+Best Case:
+As in best case whole array is sorted so for the second pass(loop) there will be no computation. So the outer loop runs for
+1+1+1......n times. Complexity is O(n).
+
+Worst Case:
+In worst case the array is ordered reverse like n,n-1,n-2,..... So for this the outer loop as well as the inner loop runs
+and the steps in each iteration are n + n-1 + n-2.....1.So this gives n(n+1)/2 passes. Complexity is O(n^2)
+
+Average Case:
+In average case the outer loop runs for n times. The probability of inner loop terminating at any item of array is 1/n-1. 
+So we can have k which is 1<=k<=n-1. So the A(n)=summation of k from 0 to n-1 in k(1/n-1) which is n(n-1)/2*(1/n-1)=n/2.
+And after taking account of outer loop n(n/2)=n^2/2 is the complexity. 
+
+
+Insertion Sort:
+
+Best Case:
+As in best case whole array is sorted so for the second pass(loop) there will be no computation. So the outer loop runs for
+1+1+1......n times. Complexity is O(n).
+
+Worst Case:
+In worst case the array is ordered reverse like n,n-1,n-2,..... So for this the outer loop as well as the inner loop runs
+and the steps in each iteration are 1 + 2 +.....n-1.So this gives n(n-1)/2 passes. Complexity is O(n^2)
+
+Average Case:
+In average case the outer loop runs for n times. The probability of inner loop terminating at any item of array is 1/n-1. 
+So we can have k which is 1<=k<=n-1. So the A(n)=summation of k from 0 to n-1 in k(1/n-1) which is n(n-1)/2*(1/n-1)=n/2.
+And after taking account of outer loop n(n/2)=n^2/2 is the complexity. 
+
+
+Merge Sort:
+
+Best Case:
+In the best case the merge sort will divide the array into two halves recursively and the merge will take some constant amount 
+of time. So this will come out to be equal to worst case time complexity of O(nlogn).
+
+Worst Case:
+T(n)=c if n<2
+     2T(n/2)+c'n
+
+T(n/2)=4T(n/4)+2nc'
+T(n/4)=8T(n/8)+3nc'
+T(n/8)=16T(n/16)+4nc'
+
+Let n/2^k=1
+    n=2^k
+    logn=k
+T(2^k)=2^lognT(1)+nlognc'
+T(2^k)=nc+nlognc'
+
+So W(n)=O(nlogn)
+
+Average Case:
+In the average case the merge sort will divide the array into two halves recursively and the merge will take some constant amount 
+of time. So this will come out to be equal to worst case time complexity of O(nlogn).
+
+Randomized Quick Sort:
+
+Best Case: B(n)=O(nlogn)
+
+Worst Case: W(n)=O(n^2)
+
+Average Case:A(n)=O(nlogn)

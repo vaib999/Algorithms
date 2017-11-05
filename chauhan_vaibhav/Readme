@@ -1,0 +1,6 @@
+For the first question type the size of matrix(Integer).
+
+For the second question type the size of digits to be multiplied(Integer).
+
+For the third question choose 1 for heap sort or 2 for radix sort. After that type the size of
+data to be sorted. 
